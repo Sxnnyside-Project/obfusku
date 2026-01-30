@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../Obfusku.png" alt="Obfusku" width="300"/>
+  <img src="Obfusku.png" alt="Obfusku" width="300"/>
 </p>
 
 <h1 align="center">🜏 Obfusku</h1>
