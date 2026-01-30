@@ -1,0 +1,35 @@
+// ═══════════════════════════════════════════════════════════════
+// Function Example in Obfusku
+// Demonstrates the λ (lambda) function definition syntax
+// ═══════════════════════════════════════════════════════════════
+
+// Define a function to calculate square
+λsquare[⟁n]
+    ⤶[n ✱ n]
+Λ
+
+// Define a function to add two numbers
+λadd[⟁a, ⟁b]
+    ⤶[a ✚ b]
+Λ
+
+// Define a greeting function
+λgreet[⌘name]
+    ✤"Hello,"
+    ⚡[name]
+Λ
+
+// Use the functions
+⟁x=7
+⟁squared=⤷square[x]
+✤"The square of 7 is:"
+⚡[squared]
+
+⟁sum=⤷add[10, 20]
+✤"10 + 20 ="
+⚡[sum]
+
+// Call greet function (result discarded)
+⟁_=⤷greet["Obfusku Wizard"]
+
+❧

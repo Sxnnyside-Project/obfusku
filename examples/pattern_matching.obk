@@ -1,0 +1,49 @@
+// ═══════════════════════════════════════════════════════════════
+// Pattern Matching Example in Obfusku v0.3.0
+// Demonstrates the ⟡ ⟢ ⟣ pattern matching syntax
+// ═══════════════════════════════════════════════════════════════
+
+// Simple value matching
+⟁value=2
+
+⟡value]
+    ⟢1]
+        ✤"Value is one"
+    ⟢2]
+        ✤"Value is two"
+    ⟢3]
+        ✤"Value is three"
+    ⟢◇]
+        ✤"Value is something else"
+⟣
+
+// String matching
+⌘command="cast"
+
+⟡command]
+    ⟢"cast"]
+        ✤"Casting spell..."
+    ⟢"heal"]
+        ✤"Healing..."
+    ⟢"flee"]
+        ✤"Running away!"
+    ⟢◇]
+        ✤"Unknown command"
+⟣
+
+// Matching with computed values
+⟁x=10
+⟁y=5
+⟁result=0
+⚙︎[x ☠︎ y]→result
+
+⟡result]
+    ⟢0]
+        ✤"Equal values"
+    ⟢5]
+        ✤"Difference is 5"
+    ⟢◇]
+        ✤"Some other difference"
+⟣
+
+❧
